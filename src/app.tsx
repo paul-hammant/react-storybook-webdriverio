@@ -42,3 +42,5 @@ ReactDOM.render(
   <App message="Value: " />,
   document.getElementById('root')
 );
+
+export default App;
