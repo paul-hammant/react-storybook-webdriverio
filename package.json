@@ -6,7 +6,8 @@
   "scripts": {
     "prod": "webpack -p",
     "dev": "webpack-dev-server -d --content-base ./public",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "wdio": "npx wdio wdio.conf.js"
   },
   "keywords": [
     "react",

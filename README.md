@@ -16,6 +16,17 @@ npm install @storybook/react --save-dev
 ```
 
 ```sh
+# install wdio
+npm i --save-dev @wdio/cli
+
+# setup wdio config manually
+npx wdio
+
+# or to setup with the default configs
+npx wdio config -y
+```
+
+```sh
 # development build
 npm run dev
 # Browse: http://localhost:8080/
@@ -26,4 +37,7 @@ npm run prod
 
 # run storybook
 npm run storybook
+
+# run webdriverio
+npm run wdio
 ```
