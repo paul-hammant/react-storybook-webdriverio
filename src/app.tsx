@@ -18,9 +18,9 @@ class App extends React.Component<Props, State> {
   render() {
     return (
         <div>
-            <div>{this.props.message} {this.state.count}</div>
-            <button onClick={this.increment}>+</button>
-            <button onClick={this.decrement}>-</button>
+            <div className='message-output'>{this.props.message} {this.state.count}</div>
+            <button id='btnIncrement' onClick={this.increment}>+</button>
+            <button id='btnDecrement' onClick={this.decrement}>-</button>
         </div>
     );
   }
