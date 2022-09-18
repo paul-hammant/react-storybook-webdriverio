@@ -2,19 +2,15 @@ const assert = require('assert');
 
 describe('webdriver.io page', () => {
     beforeEach(() => {
-        browser.url('http://localhost:8080/');
+        browser.url('http://localhost:63674/iframe.html?id=app--with-text&viewMode=story');
     });
 
-    it('should have the right title', () => {
-        const title = browser.getTitle();
-        assert.strictEqual(title, 'React-Storybook-WebdriverIO');
-        // browser.pause(2000);
-    });
-
-    it('should increase the value by 1', () => { 
+    it('should increase and decrease values by 1', () => {
+        assert.equal($('.message-output').getText(), 'Current value: 0');
         $('#btnIncrement').click();
-        const newValue = $('.message-output').getText();
-        console.log('TEST  value::  ', newValue);
-        assert.equal(newValue, 'Value: 1');
+        assert.equal($('.message-output').getText(), 'Current value: 1');
+        $('#btnDecrement').click()
+        $('#btnDecrement').click()
+        assert.equal($('.message-output').getText(), 'Current value: -1');
     });
 });
