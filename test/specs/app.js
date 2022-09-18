@@ -2,7 +2,7 @@ const assert = require('assert');
 
 describe('incr-decr component', () => {
     beforeEach(() => {
-        browser.url('http://localhost:64308/iframe.html?id=app--with-text&viewMode=story');
+        browser.url('http://localhost:64791/iframe.html?id=app--with-text&viewMode=story');
     });
 
     it('should increase and decrease values by 1', () => {

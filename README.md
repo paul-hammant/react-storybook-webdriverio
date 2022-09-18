@@ -40,5 +40,4 @@ Yup, the wdio target should auto-start the storybook server and correlate the po
 
 # TODO
 
-* More package.json upgrades
 * More tests
