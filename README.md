@@ -42,4 +42,3 @@ Yup, the wdio target should auto-start the storybook server and correlate the po
 
 * More package.json upgrades
 * More tests
-* Attempt to use the expect(.).toBe grammar of WDIO
